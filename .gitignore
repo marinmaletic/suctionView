@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# SAM2 model checkpoints (large binary files — download separately)
+sam2/checkpoints/
+*.pt
+*.pth
+
+# Logs
+*.log

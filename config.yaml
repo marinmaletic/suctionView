@@ -1,0 +1,23 @@
+#  Camera
+# Path to the camera intrinsics JSON file (RealSense format).
+# The file must contain: fx, fy, ppx, ppy, width, height
+# and optionally depth_scale (default 0.001 if absent).
+intrinsics_file: intrinsics.json
+
+# Depth scale: converts raw depth units to metres.
+depth_scale: 0.001
+
+#  SAM2
+# Download checkpoints from https://github.com/facebookresearch/sam2
+sam2_checkpoint: sam2/checkpoints/sam2.1_hiera_small.pt
+sam2_config:     sam2/configs/sam2.1/sam2.1_hiera_s.yaml
+
+#  Point cloud processing
+denoise_nb_neighbors: 20       # statistical outlier removal — neighbour count
+denoise_std_ratio:    2.0      # statistical outlier removal — std ratio
+
+#  Suction scoring defaults 
+default_knn_k:         30      # KNN neighbours for normal estimation
+default_std_win:       25      # std-filter window in pixels
+default_ransac_iters:  50      # RANSAC plane hypotheses per point
+default_ransac_tol_mm: 3       # RANSAC inlier tolerance in mm
