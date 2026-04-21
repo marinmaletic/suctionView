@@ -68,8 +68,8 @@ cd ../..
 Then verify the paths in `config.yaml` match your checkpoint location:
 
 ```yaml
-sam2_checkpoint: sam2/checkpoints/sam2.1_hiera_small.pt
-sam2_config:     sam2/configs/sam2.1/sam2.1_hiera_s.yaml
+sam2_checkpoint: /root/suctionView/submodules/sam2/checkpoints/sam2.1_hiera_small.pt
+sam2_config:     configs/sam2.1/sam2.1_hiera_s.yaml
 ```
 
 ### 4. Configure camera intrinsics

@@ -9,8 +9,8 @@ depth_scale: 0.001
 
 #  SAM2
 # Download checkpoints from https://github.com/facebookresearch/sam2
-sam2_checkpoint: sam2/checkpoints/sam2.1_hiera_small.pt
-sam2_config:     sam2/configs/sam2.1/sam2.1_hiera_s.yaml
+sam2_checkpoint: /root/suctionView/submodules/sam2/checkpoints/sam2.1_hiera_small.pt
+sam2_config:     configs/sam2.1/sam2.1_hiera_s.yaml
 
 #  Point cloud processing
 denoise_nb_neighbors: 20       # statistical outlier removal — neighbour count
