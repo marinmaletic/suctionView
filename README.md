@@ -57,7 +57,7 @@ pip install -r requirements.txt
 ### 3. Install SAM2 
 
 ```bash
-cd sam2
+cd submodules/sam2
 pip install -e .
 cd checkpoints
 # Download the small checkpoint (recommended)
